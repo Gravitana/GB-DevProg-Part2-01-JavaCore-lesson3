@@ -1,6 +1,6 @@
 package ru.gravitana.lesson3;
 
-public abstract class Employee {
+public abstract class Employee implements Comparable<Employee> {
     protected String name;
     protected int age;
     protected int salary;

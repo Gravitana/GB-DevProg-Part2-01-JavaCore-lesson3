@@ -9,4 +9,9 @@ public class Freelancer extends Employee{
     protected Freelancer(String name, int age, int salary) {
         super(name, age, salary);
     }
+
+    @Override
+    public int compareTo(Employee e) {
+        return (int) (this.calculationSalary() - e.calculationSalary());
+    }
 }
