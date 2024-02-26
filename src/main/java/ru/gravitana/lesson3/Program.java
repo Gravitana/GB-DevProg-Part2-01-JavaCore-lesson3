@@ -21,7 +21,7 @@ public class Program {
 
         Collections.sort(employees);
 
-        System.out.println("\nОтсортировано\n");
+        System.out.println("\nОтсортировано по месячной зарплате\n");
 
         for (Employee employee: employees) {
             System.out.println(employee);
