@@ -11,8 +11,11 @@ public abstract class Employee {
         return age;
     }
     public int getSalary() {
-        return age;
+        return salary;
     }
+
+    public abstract float calculationSalary();
+
     protected Employee(String name, int age, int salary){
         this.name = name;
         this.age = age;
@@ -23,7 +26,7 @@ public abstract class Employee {
         return "Employee{" +
                 "name='" + getName() + '\'' +
                 ", age=" + getAge() +
-                ", salary=" + getSalary() +
+                ", salary=" + calculationSalary() + "(per month)" +
                 '}';
     }
 
